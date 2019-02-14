@@ -1,96 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battleship Game</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <p>Battleship Game</p>
-
-    <table id="t1">
-      <tr>
-        <th></th>
-        <th>A</th>
-        <th>B</th>
-        <th>C</th>
-        <th>D</th>
-        <th>E</th>
-        <th>F</th>
-        <th>G</th>
-      </tr>
-      <tr>
-        <th>1</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>2</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>3</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>4</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>5</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>6</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-      <tr>
-        <th>7</th>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-        <td><input type="button"/></td>
-      </tr>
-    </table>
-    <input type="text" name="BoardGame" value="Enter Here">
+    <h1>Battleship Game: HTML/CSS practice</h1>
+    <div id="boardgame">
+      <div class="row">
+        <div id="th"></div>
+        <div id="th">A</div>
+        <div id="th">B</div>
+        <div id="th">C</div>
+        <div id="th">D</div>
+        <div id="th">E</div>
+        <div id="th">F</div>
+        <div id="th">G</div>
+      </div>
+      <div class="row">
+        <div id="th">1</div>
+        <input type="button" id="A1"/>
+        <input type="button" id="A2"/>
+        <input type="button" id="A3"/>
+        <input type="button" id="A4"/>
+        <input type="button" id="A5"/>
+        <input type="button" id="A6"/>
+        <input type="button" id="A7"/>
+      </div>
+      <div class="row">
+        <div id="th">2</div>
+        <input type="button" id="B1"/>
+        <input type="button" id="B2"/>
+        <input type="button" id="B3"/>
+        <input type="button" id="B4"/>
+        <input type="button" id="B5"/>
+        <input type="button" id="B6"/>
+        <input type="button" id="B7"/>
+      </div>
+      <div class="row">
+        <div id="th">3</div>
+        <input type="button" id="C1"/>
+        <input type="button" id="C2"/>
+        <input type="button" id="C3"/>
+        <input type="button" id="C4"/>
+        <input type="button" id="C5"/>
+        <input type="button" id="C6"/>
+        <input type="button" id="C7"/>
+      </div>
+      <div class="row">
+        <div id="th">4</div>
+        <input type="button" id="D1"/>
+        <input type="button" id="D2"/>
+        <input type="button" id="D3"/>
+        <input type="button" id="D4"/>
+        <input type="button" id="D5"/>
+        <input type="button" id="D6"/>
+        <input type="button" id="D7"/>
+      </div>
+      <div class="row">
+        <div id="th">5</div>
+        <input type="button" id="E1"/>
+        <input type="button" id="E2"/>
+        <input type="button" id="E3"/>
+        <input type="button" id="E4"/>
+        <input type="button" id="E5"/>
+        <input type="button" id="E6"/>
+        <input type="button" id="E7"/>
+      </div>
+      <div class="row">
+        <div id="th">6</div>
+        <input type="button" id="F1"/>
+        <input type="button" id="F2"/>
+        <input type="button" id="F3"/>
+        <input type="button" id="F4"/>
+        <input type="button" id="F5"/>
+        <input type="button" id="F6"/>
+        <input type="button" id="F7"/>
+      </div>
+      <div class="row">
+        <div id="th">7</div>
+        <input type="button" id="G1"/>
+        <input type="button" id="G2"/>
+        <input type="button" id="G3"/>
+        <input type="button" id="G4"/>
+        <input type="button" id="G5"/>
+        <input type="button" id="G6"/>
+        <input type="button" id="G7"/>
+      </div>
+    </div>
     <!--<script src="battleship.js"></script>-->
   </body>
 </html>
