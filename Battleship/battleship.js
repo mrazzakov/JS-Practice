@@ -1,10 +1,10 @@
 
 var hit = ['A7', 'B7', 'C7', 'D2', 'D3', 'D4', 'D5', 'A3', 'B3'];
-var hitSuccess = [false];
+var hitSuccess = new Array(hit.length).fill(false);
 var selected;
 
 function checkSuccess(hitsuccess) {
-  return hitsuccess == true;
+  return hitsuccess === true;
 }
 
 function selectButton(id) {
@@ -18,9 +18,8 @@ function selectButton(id) {
     document.getElementById(id).style.backgroundColor = "#000000";
   }
 
-  console.log(hit.length);
-  console.log(hitSuccess.every(checkSuccess));
+  console.log(hitSuccess[2]);
   if(hitSuccess.every(checkSuccess) && hitSuccess.length === hit.length) {
-    console.log("you win");
+    alert("You Won!");
   }
 }
