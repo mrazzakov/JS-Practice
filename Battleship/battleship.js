@@ -19,7 +19,7 @@ function selectButton(id) {
   }
 
   console.log(hitSuccess[2]);
-  if(hitSuccess.every(checkSuccess) && hitSuccess.length === hit.length) {
+  if(hitSuccess.every(checkSuccess)) {
     alert("You Won!");
   }
 }

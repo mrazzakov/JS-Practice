@@ -5,20 +5,19 @@
 }
 
 .row > div, input{
-  width: calc(100%/8);
+  width: calc(100%/10);
   border: none;
-  border-radius: 12px;
   text-align: center;
   padding: 20px 0;
 }
 
 .row > div {
-  background-color: gray;
+  background-color: #45b7c1;
   color: white;
 }
 
 .row > input {
-  background-color: lightblue;
+  background-color: #7ff0ff;
 }
 
 .row > input:focus {
