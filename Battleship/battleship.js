@@ -1,5 +1,6 @@
 
-var hit = ['A7', 'B7', 'C7', 'D2', 'D3', 'D4', 'D5', 'A3', 'B3'];
+var randomLoc = Math.floor(Math.random() * 8);
+var hit = ['A' + randomLoc, 'B' + randomLoc, 'C' + randomLoc, 'D2', 'D3', 'D4', 'D5', 'A3', 'B3'];
 var hitSuccess = new Array(hit.length).fill(false);
 var selected;
 
