@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bark Page</title>
+    <script>
+        {
+          function whatShouldIWear(temp) {
+            if(temp < 0)
+              document.write("You are crazy, it is " + temp + "F outside.  Stay Home!<br>");
+            else if (temp < 60)
+              document.write("Wear a jacket, it is " + temp + "F outside.<br>");
+            else if (temp < 70)
+              document.write("It is " + temp + "F, wear a sweater<br>");
+            else
+              document.write("When it is " + temp + "F you should just wear a T-shirt<br>");
+          }
+
+        whatShouldIWear(80);
+        whatShouldIWear(95);
+        whatShouldIWear(30);
+        whatShouldIWear(12);
+        whatShouldIWear(-20);
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
