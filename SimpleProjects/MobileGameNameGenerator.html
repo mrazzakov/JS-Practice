@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile Game Name Generator</title>
+    <script>
+      {
+        function makeName() {
+          var words1 = ["War", "Age", "World", "Battle", "Clash", "Game", "Galaxy", "Empire", "Heroes", "Kingdoms", "Call", "Armies", "Battle"];
+          var words2 = ["the", "of the", "of"];
+          var words3 = ["Knights", "Souls", "Warriors", "Empire", "Arena", "Magic", "Zombies", "Dragons"];
+
+          var wordRand1 = Math.floor(Math.random() * words1.length);
+          var wordRand2 = Math.floor(Math.random() * words2.length);
+          var wordRand3 = Math.floor(Math.random() * words3.length);
+
+          var phrase = words1[wordRand1] + " " + words2[wordRand2] + " " + words3[wordRand3];
+          document.getElementById("name").innerHTML = phrase;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Random Mobile Game Name Generator!</h1>
+    <p id="name">Try your Luck!</p>
+    <input type="button" value="Generate Name" onclick="makeName()">
+  </body>
+</html>
