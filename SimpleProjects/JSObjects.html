@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Doggy Object</title>
+    <script>
+      {
+        var dog = {
+          name: "Fido",
+          weight: 20.2,
+          age: 4,
+          breed: "pug",
+          activity: "fetch balls",
+          bark: ""
+        }
+
+        function bark() {
+          if(dog.weight > 20)
+            dog.bark = "WOOF WOOF";
+          else
+            dog.bark = "woof woof";
+        }
+
+        function doggySpeak() {
+          dog.name = document.getElementById("name").value;
+          dog.weight = document.getElementById("weight").value;
+          bark();
+          var speak = dog.name + " says " + dog.bark + " when he wants to " + dog.activity;
+          alert(speak);
+          document.getElementById("speech").innerHTML = speak;
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Speaking Doggy Object</h1>
+    <p id="speech">What does the doggy say?</p>
+    <p>
+      Doggy Name:
+      <input type="text" name="Name" id="name">
+    </p>
+    <p>
+        Doggy Weight:
+        <input type="text" name="Weight" id="weight">
+      </p>
+    
+    <input type="button" value="speak" onclick="doggySpeak()">
+    
+  </body>
+</html>
